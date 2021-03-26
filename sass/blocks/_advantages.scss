@@ -1,48 +1,38 @@
-.advantages {
-    min-height: 472px;
-    padding: 70px 0 65px 0;
-    background-color: #F6F6F6;
-    &__title {
-        font-size: 30px;
-        font-weight: 700;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #0d0d0d;
-    }
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-top: 65px;
-    }
-    &__text {
-        max-width: 277px;
-        font-size: 14px;
-        font-weight: 300;
-        letter-spacing: normal;
-        text-align: center;
-        color: #0d0d0d;
-        h3 {
-            font-size: 18px;
-            font-weight: 700;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
+    .advantages {
+        min-height: 472px;
+        padding: 70px 0 65px 0;
+        background-color: #F6F6F6;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 65px;
+        }
+        &__text {
+            max-width: 277px;
+            font-size: 14px;
+            font-weight: 300;
             letter-spacing: normal;
             text-align: center;
             color: #0d0d0d;
-            margin-bottom: 20px;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 38px;
-        }
-        span {
-            color: #FF0000;
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #0d0d0d;
+                margin-bottom: 20px;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 38px;
+            }
+            span {
+                color: #FF0000;
+            }
         }
     }
-}
