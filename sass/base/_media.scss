@@ -164,4 +164,20 @@
             font-size: 25px;
         }
     }
+    .footer {
+        &__info {
+            min-width: 320px;
+            address {
+                font-size: 13px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+        }
+        &__social {
+            &-item {
+                margin: 0 10px;
+            }
+        }
+    }
 }
