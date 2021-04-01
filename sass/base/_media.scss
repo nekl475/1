@@ -27,6 +27,10 @@
             }
         }
     }
+    .modal {
+        height: 300px;
+        padding: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -86,6 +90,11 @@
         }
         &__subtitle {
             text-align: center;
+        }
+    }
+    .modal {
+        &__subtitle {
+            font-size: 16px;
         }
     }
 }
@@ -149,10 +158,10 @@
         &__descr {
             text-align: center;
         }
-        .feed-form {
-            margin: 0 auto;
-            width: 250px;
-        }
+    }
+    .feed-form {
+        margin: 10px auto 0;
+        width: 250px;
     }
     .catalog {
         &__tab {
@@ -178,6 +187,18 @@
             &-item {
                 margin: 0 10px;
             }
+        }
+    }
+    .modal {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        &__close {
+            right: 0;
+            font-size: 40px;
+        }
+        &__descr {
+            font-size: 12px;
         }
     }
 }
