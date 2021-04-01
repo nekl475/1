@@ -1,7 +1,7 @@
 .button {
     width: 153px;
     height: 32px;
-    background: $basecolor;
+    background: linear-gradient(360deg, $basecolor 30% 50%, rgba(231, 38, 54, 0.85) 90%);
     border-radius: 5px;
     border: none;
     font-weight: 500;
@@ -9,6 +9,11 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: 0.5s all;
+    &:hover {
+        box-shadow: inset 0px -3px 3px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, $basecolor 30% 50%, rgba(231, 22, 74, 0.85) 90%);
+    }
     &_main {
         margin-top: 67px;
         width: 303px;
