@@ -84,24 +84,40 @@ $(document).ready(function() {
 
     $('input[name=phone]').mask("+7 (999) 999-9999");
 
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        if (!$(this).valid()) {
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "../mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultate, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+
+
+        return false;
+    });
+
+    //Smooth scroll and page up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+    $("a[href^='#']").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
+    new WOW().init();
 });
-
-
-
-
-
-// const slider = tns({
-//     container: '.carousel__inner',
-//     items: 1,
-//     slideBy: 'page',
-//     autoplay: false,
-//     controls: false,
-//     nav: false
-// });
-
-// document.querySelector('.prev').addEventListener('click', function() {
-//     slider.goTo('prev');
-// });
-// document.querySelector('.next').addEventListener('click', function() {
-//     slider.goTo('next');
-// });
